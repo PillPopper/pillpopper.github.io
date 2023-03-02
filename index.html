@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Pill Popper</title>
+  <!-- favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+  <!-- <link rel="manifest" href="favicons/site.webmanifest"> -->
+  <link rel="manifest" href="manifest.json">
+  <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="lightgreen">
+  <!-- utilities -->
+  <link rel='stylesheet' href='https://easycss.github.io/easyreset/index.css'>
+  <link rel='stylesheet' href='https://easycss.github.io/easytypo/index.css'>
+  <link rel='stylesheet' href='style.css'>
+  <link rel='stylesheet' href='modal.css'>
+  <script type='module' defer src='index.js'></script>
+  <script type='module' defer src='client.js'></script>
+  <script type='module' defer src='modal.js'></script>
+</head>
+<body>
+    <h1>Vitamins &amp; Medicine Reminder</h1>
+
+    <div class="logo">
+      <img src="pill-popper-logo.jpg" alt="Medication Reminder"/>
+    </div>
+    
+  <div class="container">
+  
+    <div id="hideToggle">
+      <label class="timeLabel">Add time you took your meds.</label>
+      <input id="time" type="time">
+      
+      <div class="dayGroup">
+        <label class="day">Add the day.</label>
+      </div>
+      <input id="day" type="text" maxlength="90">
+
+      <input id="description" type="text" placeholder="Description (optional)" maxlength="90">
+    </div>
+
+    <!-- dynamic content renders here -->
+    <ul id="list"></ul>
+    <!-- \dynamic content renders here -->
+
+    <div class="buttons">
+      <button id="add">Add</button>
+      <button id="remove">RESET</button>
+    </div>
+
+    <p class="warning">Data will be lost if you reset your browser storage cache.</p>
+  
+  </div><!-- \container -->
+
+  <!-- usage and requirements and bug report -->
+  <section>
+    <div class="container">
+      
+      <p class="issues">
+        <a data-modal-target="#modal">Usage &amp; Requirements</a>
+        <a href="https://github.com/PillPopper/app/issues" target="_blank">Report Bugs</a>
+      </p>
+    
+    </div><!-- \container -->
+  <section>
+
+  <!-- USAGE PAGE MODAL -->
+  <div class="modal" id="modal">
+    <div class="modal-header">
+      <h2 style="text-transform: uppercase;" id="modal-title">App requirements</h2>
+      <button style="margin: 0;" data-close-button class="close-button">&times;</button>
+    </div>
+    <div class="modal-body">
+      <div class="usage">
+      <p>An internet connection is required to install and reset the app, as well as receive any future updates.</p>
+      <p>In order for data to persist the app uses local storage which requires IOS/Safari settings, 'Block All Cookies' to be disabled. Uncheck this setting if the app doesn't appear to be functioning correctly.</p>
+      <p>For the best iPhone App experience, open the app in IOS Safari and press the icon which looks like an 'up arrow in a box', situated in the bottom tool bar of the Safari Browser. Then select 'Add to Home Screen', followed by 'Add'. An icon will now appear on your phone home screen and the app will launch and function similar to any other apps you have installed. After successfully installing the App to your Home Screen, you no longer need to access the app via the Safari Browser with the URL you originally visited.</p>
+  </div>
+    </div>
+  </div>
+  <div id="overlay"></div>
+</body>
+</html>

@@ -1,0 +1,10 @@
+{
+	"name": "pill-popper",
+	"version": "1.0.5",
+	"description": "Vitamins and Medicine Reminder",
+	"main": "client.js",
+	"scripts": {
+		"dev": "as 5000 -V"
+	},
+	"license": "ISC"
+}
