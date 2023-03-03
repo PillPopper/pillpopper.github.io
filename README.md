@@ -6,10 +6,10 @@
 **Optimum use case: save as app onto homescreen of your device**
 
 Screen 1
-![Pill Popper Screen 1 Preview](https://github.com/PillPopper/pillpopper/raw/main/pp1.jpg)
+![Pill Popper Screen 1 Preview](https://github.com/PillPopper/pillpopper.github.io/raw/main/pp1.jpg)
 
 Screen 2
-![Pill Popper Screen 1 Preview](https://github.com/PillPopper/pillpopper/raw/main/pp2.jpg)
+![Pill Popper Screen 1 Preview](https://github.com/PillPopper/pillpopper.github.io/raw/main/pp2.jpg)
 
 Modal
-![Pill Popper Screen 1 Preview](https://github.com/PillPopper/pillpopper/raw/main/ppm.jpg)
+![Pill Popper Screen 1 Preview](https://github.com/PillPopper/pillpopper.github.io/raw/main/pp3.jpg)
