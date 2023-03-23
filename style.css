@@ -1,0 +1,202 @@
+:root {
+  --marginTop: 15px;
+  --toUpper: uppercase;
+  --bannerBg: #a0ebff;
+  --inputBorder: #e7e7e7;
+  --addButtonColor: lightgreen;
+  --removeButtonColor: #f33;
+  --disabledButtonColor: #f3333322;
+  --mutedText: #aaa;
+  --adBg: #f4f4f4;
+  --adTextColor: #555;
+  --link: #0056b3;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  background-color: #f9f9f9;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  height: 100%;
+  max-width: 320px;
+  margin: auto;
+}
+h1 {
+  margin-top: var(--marginTop);
+  text-transform: var(--toUpper);
+  letter-spacing: 3px;
+  font-size: 15px;
+  text-align: center;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: calc(var(--marginTop) - 6px);
+  background-color: var(--bannerBg);
+  height: 54px;
+  margin-bottom: 4px;
+}
+.logo img {
+  max-width: 100%;
+}
+.logo a img {
+  margin-bottom: -4px;
+}
+.hideToggle {
+  display: block;
+  opacity: 1;
+  -webkit-transition: opacity 20s;
+  -moz-transition: opacity 20s;
+  -o-transition: opacity 20s;
+  transition: opacity 20s;
+}
+.hidden {
+  display: none;
+  opacity: 0;
+}
+label {
+  font-size: 0.8rem;
+  font-weight: 300;
+  letter-spacing: 1.2px;
+  margin-top: 5px;
+  margin-bottom: -10px;
+}
+label.timeLabel {
+  display: block;
+  margin-bottom: -10px;
+}
+.dayGroup {
+  display: flex;
+  justify-content: space-between;
+}
+.dayGroup p {
+  font-size: 0.8rem;
+  font-weight: 300;
+  letter-spacing: 1.2px;
+  margin-top: 5px;
+  margin-bottom: -10px;
+  text-align: right;
+}
+input {
+  width: 320px;
+  margin-top: var(--marginTop);
+  padding: 10px;
+  border: 1px solid var(--inputBorder);
+  outline: none;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  min-height: 1.3em;
+  text-transform: var(--toUpper);
+}
+input[type="time"],
+input[type="text"] {
+  display: block;
+  font-size: 2rem;
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+input#description {
+  font-size: 1rem;
+}
+input::placeholder {
+  color: var(--mutedText);
+}
+.buttons {
+  display: flex;
+}
+button {
+  cursor: pointer;
+  width: 100%;
+  background-color: transparent;
+  border: 0px;
+  padding: 10px;
+  outline: none;
+  margin-top: var(--marginTop);
+  appearance: none;
+  font-weight: bold;
+  text-transform: var(--toUpper);
+}
+button#add {
+  background-color: var(--addButtonColor);
+  border: 1px solid var(--addButtonColor);
+}
+button#remove {
+  background-color: var(--removeButtonColor);
+  border: 1px solid var(--removeButtonColor);
+  color: white;
+}
+li {
+  text-align: center;
+  text-transform: var(--toUpper);
+}
+li.day,
+li.description {
+  font-size: 1.5rem;
+}
+li.time {
+  font-size: 120px;
+  margin: 18px 0 -19px 0;
+}
+li.day {
+  background-color: var(--addButtonColor);
+  color: #000;
+  /* background-color: #444; */
+  /* color: #fff; */
+  margin: 30px 0 -3px 0;
+  padding: 10px;
+}
+li.description {
+  margin: 14px 0 20px 0;
+}
+.warning {
+  color: var(--mutedText);
+  font-size: 11px;
+  text-align: center;
+  margin-top: 3px;
+}
+section {
+  background-color: var(--adBg);
+  z-index: 1000;
+  position: fixed;
+  width: 100%;
+  bottom: 14px;
+  padding: 0 0 10px 0;
+  text-align: center;
+}
+p.issues {
+  display: flex;
+  justify-content: space-between;
+}
+.issues a {
+  cursor: pointer;
+  margin-top: 10px;
+  display: block;
+  font-size: 9px;
+  color: var(--link);
+}
+/* MODAL */
+#modal-title {
+  margin: 0;
+  text-transform: var(--toUpper);
+  letter-spacing: 3px;
+  font-size: 15px;
+}
+.usage {
+  margin: 0px 0 100px 0;
+}
+.usage p:first-child {
+  margin-top: 0;
+}
+.usage p {
+  margin-top: 15px;
+  display: block;
+  font-size: 16px;
+  line-height: 20px;
+}
